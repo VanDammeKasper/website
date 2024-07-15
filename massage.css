@@ -1,0 +1,72 @@
+
+.container {
+  max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+  potential colors:
+  #8D30CF purple
+  #30CF8D teal
+  #D8A45A alternate brown 
+  #3072CF blue?
+ */
+
+.site-header {
+  background-color: #BF832D;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.site-header a {
+  color: #ffffff;
+  transition: ease-in-out color .15s;
+}
+.site-header a:hover {
+  color: #8D30CF;
+  text-decoration: none;
+}
+
+.brown-custom-box-bg {
+  background-color: #BF832D;
+}
+
+.teal-custom-box-bg {
+  background-color: #30CF8D
+}
+
+.purple-custom-box-bg {
+  background-color: #8D30CF
+}
+
+.round-custom-edge {
+  border-radius: 30px 30px 30px 30px;
+}
+
+.table-custom {
+  background-color: #D8A45A;
+}
+
+/*
+ * Extra utilities
+ */
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.flex-equal > * {
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden { overflow: hidden; }
