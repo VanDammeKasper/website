@@ -28,11 +28,11 @@
 }
 
 .brown-custom-box-bg {
-  background-color: #BF832D;
+  background-color: #592913;
 }
 
 .teal-custom-box-bg {
-  background-color: #30CF8D
+  background-color: #D3AA3E
 }
 
 .purple-custom-box-bg {
@@ -44,7 +44,9 @@
 }
 
 .table-custom {
-  background-color: #D8A45A;
+  /*background-color: #D8A45A;*/
+  background-color: #592913;
+  color: #e5e5e5;
 }
 
 /*
