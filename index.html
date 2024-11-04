@@ -14,6 +14,13 @@
 </head>
 
 <body>
+  
+ <!-- load iframe manager -->
+  <link rel="stylesheet" href="./iframemanager.css">
+  <script defer src="./scripts/iframemanager.js"></script>
+  <script defer src="./scripts/app.js"></script>
+
+
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark py-3 fluid-top brown-custom-box-bg">
     <div class="container">
@@ -57,6 +64,7 @@
     <div class="teal-custom-box-bg mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden round-custom-edge">
       <div class="my-3 p-3">
         <h2 class="display-5">Traditionelle Thai Massage</h2>
+        <!--
         <p class="lead">Die traditionelle Thaimassage, früher auch Siam Thai Massage genannt, ist auch in ihrer heutigen
           Praxis dem Buddhismus verbunden.
           Sie wird mit Metta (im südlichen Buddhismus gebräuchlicher Begriff für lebende Güte) angewendet.
@@ -64,15 +72,18 @@
           Gleichmuts, des Mitgefühls und der anteilnehmenden Freude ausführen.
           Trotz der im Sprachgebrauch verwendeten Bezeichnung "Thaimassage" handelt es sich bei dieser komplexen
           Behandlung nicht um eine "anatomische" Massage nach westlichem Verständnis. </p>
+          -->
         <img src="./images/thaimassage.jpg" alt="Thaimassage" class="m-md-3 container-fluid">
       </div>
     </div>
     <div class="bg-white mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-black overflow-hidden round-custom-edge">
       <div class="my-3 py-3">
         <h2 class="display-5">Öl massage</h2>
+        <!--
         <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minima ex neque dolores iste
           soluta magni mollitia, enim optio non itaque ad voluptatem laboriosam eos sed quos explicabo dolore
           blanditiis..</p>
+          -->
         <img src="./images/oilmassage.png" alt="Öl massage" class="container-fluid m-md-3">
       </div>
     </div>
@@ -93,7 +104,7 @@
           <thead class="table-custom">
             <tr>
               <th scope="col">Massage</th>
-              <th scope="col">Preis (Öffenungsangebot)</th>
+              <th scope="col">Preis (Öffnungsangebot)</th>
             </tr>
           </thead>
           <tbody>
@@ -141,7 +152,7 @@
       <p class="head">Tel.: +498992564896</p>
       <p class="head">Email: info@saengthong-thaimassage.de</p>
       <p class="head">Adresse: Posener platz 1, 81929 Munchen</p>
-      <h2 class="display-5">Öffenungzeiten</h2>
+      <h2 class="display-5">Öffnungzeiten</h2>
       <table class="table text-center table-striped lead bg-light">
         <thead>
           <tr>
@@ -189,10 +200,18 @@
     <div class="teal-custom-box-bg mr-md-3 pt-3 px-3 px-md-5 text-center overflow-hidden round-custom-edge">
       <h2 class="display-5 py-3">Adresse </h2>
       <div class="bg-light box-shadow mx-auto" style=" width: 80%;height: 100%; border-radius: 21px 21px 0 0;">
-        <iframe
+        <!-- Responsive iframe with title + custom thumbnail -->
+        <div
+        data-service="googlemaps"
+        data-id="!1m14!1m8!1m3!1d242.18500577975018!2d11.640757033574394!3d48.14865707209484!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e750061502897%3A0xaf13778181825d52!2sThai-Massage%20Saeng%20Thong!5e0!3m2!1sen!2sde!4v1723704484175!5m2!1sen!2sde"
+        data-autoscale
+        data-thumbnail="./images/google_maps_icon.png"
+    ></div>
+
+        <!-- <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d242.18500577975018!2d11.640757033574394!3d48.14865707209484!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e750061502897%3A0xaf13778181825d52!2sThai-Massage%20Saeng%20Thong!5e0!3m2!1sen!2sde!4v1723704484175!5m2!1sen!2sde"
           width="100%" height="500" style="border-radius:21px 21px 0 0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          referrerpolicy="no-referrer-when-downgrade"></iframe> -->
         <p class="lead my-3">Posenser platz 1, 81929 Munchen</p>
       </div>
     </div>
@@ -242,10 +261,6 @@
         <img src="./images/icon.png" alt="massage-icon" class="m-md-3 img-fluid" height="30px" width="60px">
       </div>
       <div class="col-6 col-md">
-        <h5>About</h5>
-        <p>lorem ipsum</p>
-      </div>
-      <div class="col-6 col-md">
         <h5>Contact</h5>
         <ul class="list-unstyled text-small">
           <li>
@@ -268,6 +283,7 @@
     crossorigin="anonymous"></script>
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
 
+  <!-- mailbox  -->
   <script>
     mapboxgl.accessToken =
       'pk.eyJ1IjoiYnRyYXZlcnN5IiwiYSI6ImNrbmh0dXF1NzBtbnMyb3MzcTBpaG10eXcifQ.h5ZyYCglnMdOLAGGiL1Auw'
@@ -278,6 +294,7 @@
       zoom: 18,
     })
   </script>
+
 </body>
 
 </html>
