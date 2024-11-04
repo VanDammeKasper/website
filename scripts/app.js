@@ -16,7 +16,7 @@
                     de : {
                         notice: 'Dieser Inhalt wird von einem Dritten gehostet. Durch die Anzeige der externen Inhalte akzeptieren Sie die <a rel="noreferrer noopener" href="https://cloud.google.com/maps-platform/terms?hl=de" target="_blank">Nutzungsbedingungen</a> von Google Maps.',
                         loadBtn: 'Laden',
-                        loadAllBtn: "Bei jedem Besuch laden"
+                        loadAllBtn: "Bei jedem Besuch laden (mit Hilfe eines Cookies)"
                     }
                 }
             }
