@@ -3,7 +3,7 @@
     const im = iframemanager();
 
     im.run({
-        currLang: 'en',
+        currLang: 'de',
         services : {
             googlemaps : {
                 embedUrl: 'https://www.google.com/maps/embed?pb={data-id}',
@@ -13,10 +13,10 @@
                 },
     
                 languages : {
-                    en : {
-                        notice: 'This content is hosted by a third party. By showing the external content you accept the <a rel="noreferrer noopener" href="https://cloud.google.com/maps-platform/terms" target="_blank">terms and conditions</a> of Google Maps.',
-                        loadBtn: 'Load map',
-                        loadAllBtn: "Don't ask again"
+                    de : {
+                        notice: 'Dieser Inhalt wird von einem Dritten gehostet. Durch die Anzeige der externen Inhalte akzeptieren Sie die <a rel="noreferrer noopener" href="https://cloud.google.com/maps-platform/terms" target="_blank">Nutzungsbedingungen</a> von Google Maps.',
+                        loadBtn: 'Laden',
+                        loadAllBtn: "bei jedem Besuch laden"
                     }
                 }
             }
