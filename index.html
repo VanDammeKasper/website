@@ -14,81 +14,8 @@
 </head>
 
 <body>
-<!-- Seasonal snowflakes -->
-<script>
-  const NUMBER_OF_SNOWFLAKES = 300;
-  const MAX_SNOWFLAKE_SIZE = 5;
-  const MAX_SNOWFLAKE_SPEED = 2;
-  const SNOWFLAKE_COLOUR = '#d3e0eb';
-  const snowflakes = [];
-
-  const canvas = document.createElement('canvas');
-  canvas.style.position = 'absolute';
-  canvas.style.top = '0px';
-  canvas.style.zIndex = 100;
-  canvas.style.pointerEvents = 'none';
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-
-  document.body.appendChild(canvas);
-
-  const ctx = canvas.getContext('2d');
-
-  const createSnowflake = () => ({
-    x: Math.random() * canvas.width,
-    y: Math.random() * canvas.height,
-    radius: Math.floor(Math.random() * MAX_SNOWFLAKE_SIZE +1),
-    colour: SNOWFLAKE_COLOUR,
-    speed: Math.random() * MAX_SNOWFLAKE_SPEED + 3,
-    sway: Math.random() - 0.5
-  });
-
-  const drawSnowflake = snowflake => {
-    ctx.beginPath();
-    ctx.arc(snowflake.x, snowflake.y, snowflake.radius, 0 , Math.PI * 2);
-    ctx.fillStyle = snowflake.colour;
-    ctx.fill();
-    ctx.closePath();
-  };
-
-  const updateSnowflake = snowflake => {
-    snowflake.y += snowflake.speed;
-    snowflake.x += snowflake.sway;
-    if (snowflake.y > canvas.height) {
-      Object.assign(snowflake, createSnowflake());
-    }
-  };
-
-  const animate = () => {
-    ctx.clearRect(0,0, canvas.width, canvas.height);
-    snowflakes.forEach(snowflake => {
-      updateSnowflake(snowflake);
-      drawSnowflake(snowflake);
-    });
-
-    requestAnimationFrame(animate);
-
-  };
-
-  for (let i = 0; i < NUMBER_OF_SNOWFLAKES; i++ ) {
-    snowflakes.push(createSnowflake());
-  }
-
-  window.addEventListener('resize', () => {
-    canvas.width = window.innerWidth;
-    canvas.height = wind.innerHeight;
-  });
-
-  window.addEventListener('scroll', () => {
-    canvas.style.top = `${window.scrollY}px`;
-  });
-
-
-
-animate()
-
-</script>
-
+  <!-- Seasonal snowflakes  -->
+  <script src="./scripts/snowEffect.js"></script> 
   
  <!-- load iframe manager -->
   <link rel="stylesheet" href="./iframemanager.css">
@@ -160,7 +87,7 @@ animate()
 
   <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
     <div class="cream-custom-box-bg pt-3 px-3 pt-md-3 px-md-5 text-white overflow-hidden round-custom-edge">
-      <div class="bg-light box-shadow mx-auto" style=" width: 80%;height: 100%; border-radius: 21px 21px 0 0;">
+      <div class="bg-light box-shadow mx-auto col-lg-8 col-md-12" style="height: 100%; border-radius: 21px 21px 0 0;">
         <table class="table table-striped text-center lead">
           <thead class="table-custom">
             <tr>
