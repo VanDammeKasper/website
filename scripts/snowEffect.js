@@ -1,4 +1,4 @@
-const MAX_SNOWFLAKE_SIZE = 5;
+  const MAX_SNOWFLAKE_SIZE = 4;
   const MAX_SNOWFLAKE_SPEED = 1;
   const SNOWFLAKE_COLOUR = '#d3e0eb';
   var snowflakes = [];
@@ -23,7 +23,7 @@ const MAX_SNOWFLAKE_SIZE = 5;
     y: Math.random() * canvas.height,
     radius: Math.floor(Math.random() * MAX_SNOWFLAKE_SIZE +1),
     colour: SNOWFLAKE_COLOUR,
-    speed: Math.random() * MAX_SNOWFLAKE_SPEED + 3,
+    speed: Math.random() * MAX_SNOWFLAKE_SPEED + 1,
     sway: Math.random() - 0.5
   });
 
@@ -71,10 +71,8 @@ generateSnowflakes()
   });
 
   window.addEventListener('scroll', () => {
-    if (window.scrollY < 4000 ) {
+    if (window.scrollY < 3650 ) {
       canvas.style.top = `${window.scrollY}px`;
-    } else {
-      canvas.style.top = 3980
     }
   });
 
