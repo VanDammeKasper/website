@@ -10,7 +10,6 @@ const MAX_SNOWFLAKE_SIZE = 5;
   canvas.style.pointerEvents = 'none';
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
-  canvas.id = 'canvas_id';
 
 
   var number_of_snowflakes = canvas.width / 7;
@@ -72,9 +71,12 @@ generateSnowflakes()
   });
 
   window.addEventListener('scroll', () => {
-    canvas.style.top = `${window.scrollY}px`;
+    if (window.scrollY < 4000 ) {
+      canvas.style.top = `${window.scrollY}px`;
+    } else {
+      canvas.style.top = 3980
+    }
   });
-
 
 
 animate()

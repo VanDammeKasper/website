@@ -85,7 +85,3 @@ body {
 }
 
 .overflow-hidden { overflow: hidden; }
-
-#canvas_id {
-  height:100%;
-}
