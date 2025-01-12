@@ -7,15 +7,6 @@ body {
   max-width: 960px;
 }
 
-/*
- * Custom translucent site header
-  potential colors:
-  #8D30CF purple
-  #30CF8D teal
-  #D8A45A alternate brown 
-  #3072CF blue?
- */
-
 .site-header {
   background-color: #BF832D;
   -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -61,10 +52,6 @@ body {
 .table-gold {
   background-color: #D3AA3E;
 }
-
-/*
- * Extra utilities
- */
 
 .border-top { border-top: 1px solid #f0e3bb; }
 .border-bottom { border-bottom: 1px solid #f0e3bb; }
