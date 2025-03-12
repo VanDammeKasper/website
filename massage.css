@@ -13,14 +13,13 @@ body {
   backdrop-filter: saturate(180%) blur(20px);
 }
 
-.site-header a {
-  color: #ffffff;
-  transition: ease-in-out color .15s;
+.custom-link-item a {
+  color: black;
 }
-.site-header a:hover {
-  color: #8D30CF;
-  text-decoration: none;
-}
+.custom-link-item a:hover {
+  color: #592913;
+  
+ }
 
 .brown-custom-box-bg {
   background-color: #592913;
@@ -72,3 +71,4 @@ body {
 }
 
 .overflow-hidden { overflow: hidden; }
+
